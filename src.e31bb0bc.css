@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.header {
+  color: red;
+}
+
+.products {
+  color: blue;
+}
+
+.making {
+  color: green;
+}
+
+.reviews {
+  color: greenyellow;
+}
+
+.schedule {
+  color: hotpink;
+}
+
+.footer {
+  color: indigo;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
