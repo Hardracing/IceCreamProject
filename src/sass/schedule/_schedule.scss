@@ -1,3 +1,110 @@
 .schedule {
-  color: hotpink;
+  color: $description-text;
+  background-color: $section-bgc;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-bottom: 113px;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.schedule-item {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  &:nth-child(3n) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.card-title {
+  display: inline-block;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: $coffee;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 25px;
+  line-height: 1.86;
+}
+
+.schedule-cards {
+  margin: -20px;
+  margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.schedule-card {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin: 20px;
+
+  padding: 43px 20px;
+}
+
+.item-city {
+  display: block;
+  color: black;
+  line-height: 1.86;
+  margin-bottom: 10px;
+}
+
+.item-title {
+  color: black;
+  line-height: 1.86;
+}
+
+.paragraph-time {
+  color: $dark-pink;
+}
+
+.schedule-buttons {
+  text-align: center;
+  padding-bottom: 113px;
+  margin: -10px;
+}
+
+.schedule-button {
+  margin: 10px;
+}
+
+.button-schedule {
+  color: $accented-text;
+  background-color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  cursor: pointer;
+  width: 161px;
+  height: 44px;
+
+  &:hover,
+  :focus {
+    color: white;
+    background-color: $home-icon;
+  }
+}
+
+.schedule-arrow {
+  stroke: currentColor;
 }
