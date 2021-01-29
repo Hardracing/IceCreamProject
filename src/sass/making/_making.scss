@@ -1,3 +1,152 @@
-.making {
-  color: green;
+.making-section {
+  background-color: $section-bgc;
 }
+
+.making-container {
+  background-image: url(/images/mobile/milk-background@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and(max-width: $to-tablet) {
+    padding-top: 125px;
+    padding-bottom: 97px;
+  }
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 130px;
+    padding-bottom: 142px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    padding-top: 125px;
+    padding-bottom: 139px;
+  }
+}
+
+.section__title {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.making-picture {
+  margin-top: 26px;
+}
+
+.making-describe {
+  padding-top: 46px;
+  padding-bottom: 39px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.making-describe p {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.making-describe .making-begin {
+  color: #000000;
+}
+
+.making-describe .making-middle {
+  margin-top: 30px;
+  color: $description-text;
+  letter-spacing: 0, 04em;
+}
+
+.making-describe .making-result {
+  margin-top: 15px;
+  color: $description-text;
+}
+
+.making-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 17px;
+  padding: 0 37px;
+
+  width: 176px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  color: $accented-text;
+}
+
+.making-button::after {
+  content: '';
+  width: 7px;
+  height: 11px;
+  display: inline-block;
+  background-image: url(/images/making-buttton-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 7px 11px;
+  background-position: 50% 50%;
+}
+
+.li-title,
+.li-description {
+  margin: 0;
+}
+
+.li-title {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $accented-text;
+}
+
+.making-volume .li-title::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  margin-bottom: 14px;
+  display: block;
+  background-image: url(/images/bucket-milk.svg);
+  background-size: contain;
+}
+
+.making-weight .li-title::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-bottom: 14px;
+  display: block;
+  background-image: url(/images/bucket-apple.svg);
+  background-size: contain;
+}
+
+.making-number .li-title::before {
+  content: '';
+  width: 44px;
+  height: 50px;
+  margin-bottom: 14px;
+  display: block;
+  background-image: url(/images/sweets.svg);
+  background-size: contain;
+}
+
+.li-description {
+  margin-top: 20px;
+
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 700;
+  color: #000000;
+}
+
+.making-statistical li + li {
+  margin-top: 38px;
+
