@@ -29,11 +29,7 @@
   margin-bottom: 16px;
 
   font-size: 18px;
-  line-height: 1.16;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-weight: 400;
-
+        
   color: $dark-pink;
   @media screen and (min-width: $tablet) {
     font-size: 26px;
@@ -52,10 +48,10 @@
   font-family: Titan One ;
   
   font-size: 34px;
+  font-weight: 400;
   line-height: 1.14;
   
   text-transform: uppercase;
-
   color: $accented-text;
 
   @media screen and (min-width: $tablet) {
@@ -102,14 +98,10 @@
 .footer-social .social-item {
   display: block;
   width: 20px;
-  height: 20px;
-        
+  height: 20px;        
 }
-
-
 .footer-address {
   display: block;
-  
 }
 .footer-contact {
   display: block;
@@ -131,9 +123,6 @@
     
   color: $accented-text;
 }
-
-  
-
 .footer-copy {
 
   margin-top: 0;
@@ -141,12 +130,10 @@
   padding-bottom: 25px;
   padding-top: 22px;
   border-top: 1px solid #E1E1E1;
-
  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-
 
   text-align: center;
 
@@ -154,12 +141,10 @@
   @media screen and (min-width: $tablet) {
     padding-bottom: 18px;
     padding-top: 29px;
-        
   }
   @media screen and (min-width: $desctop) {
     padding-bottom: 10px;
     padding-top: 10px;
-        
   }
 }
 .footer-copy .text {
@@ -167,7 +152,6 @@
   width: 150px;
   @media screen and (min-width: $tablet) {
     width: 300px;
-    
   }
   
 }
