@@ -1,38 +1,4 @@
-.menu-box {
-  background-color: $menu-bgc;
-  width: 250px;
-  height: 502px;
-  @media screen and(max-width: $to-desctop) {
-    position: relative;
-    padding-top: 58px;
-  }
-}
-.menuclose-btn {
-  position: absolute;
-  top: 23px;
-  right: 28px;
-  background-color: green;
-}
-.nav-list {
-  @media screen and(max-width: $to-desctop) {
-    padding-left: 21px;
-    margin-top: 32px;
-  }
-}
-.nav-item {
-  color: #fff;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.29;
-  &:not(:last-child) {
-    margin-bottom: 22px;
-  }
-}
-.buynow-btn {
-  padding: 18px 49px;
-  border: none;
-  background-color: #fff;
-  color: $accented-text;
-  border-radius: 22px;
-}
+@import './menu-btn';
+@import './buynow-btn';
+@import './navigation';
+@import './mobile-menu';
