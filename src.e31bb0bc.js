@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"/Users/lidia_strelets/Documents/GitHub/IceCreamProject/src/images/mobile/milk-background@1x.png":[["milk-background@1x.92e8f352.png","images/mobile/milk-background@1x.png"],"images/mobile/milk-background@1x.png"],"/Users/lidia_strelets/Documents/GitHub/IceCreamProject/src/images/making-buttton-arrow.svg":[["making-buttton-arrow.2d668fdd.svg","images/making-buttton-arrow.svg"],"images/making-buttton-arrow.svg"],"/Users/lidia_strelets/Documents/GitHub/IceCreamProject/src/images/bucket-milk.svg":[["bucket-milk.00dc0a46.svg","images/bucket-milk.svg"],"images/bucket-milk.svg"],"/Users/lidia_strelets/Documents/GitHub/IceCreamProject/src/images/bucket-apple.svg":[["bucket-apple.b22589eb.svg","images/bucket-apple.svg"],"images/bucket-apple.svg"],"/Users/lidia_strelets/Documents/GitHub/IceCreamProject/src/images/sweets.svg":[["sweets.ae05f5b3.svg","images/sweets.svg"],"images/sweets.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60552" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49677" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
