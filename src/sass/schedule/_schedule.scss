@@ -36,7 +36,6 @@ p {
   border-radius: 4px;
   color: #ffffff;
   background-color: $coffee;
-  margin: 0;
   margin-bottom: 25px;
   padding: 0 25px;
   line-height: 1.86;
@@ -74,6 +73,13 @@ p {
 
 .paragraph-time {
   color: $dark-pink;
+}
+
+.paragraph-address {
+  color: $description-text;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .schedule-buttons {
