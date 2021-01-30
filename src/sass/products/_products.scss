@@ -14,7 +14,7 @@
   }
   @media screen and(max-width: $to-tablet) {
     &:not(:last-child) {
-      margin-bottom: 17px;
+      margin-bottom: 130px;
     }
   }
   border-radius: 24px;
@@ -73,9 +73,10 @@
 }
 .product-image__container {
   position: absolute;
-  top: -50%;
-  left: 50%;
+  top: -110px;
+  left: 16px;
 }
+
 .product-btn {
   border: none;
   padding: 0;
