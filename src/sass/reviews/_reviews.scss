@@ -1,16 +1,7 @@
 /*.reviews {
   color: greenyellow;
 }*/
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+
 .reviews-gallery {
   min-width: 320px;
   @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
