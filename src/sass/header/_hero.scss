@@ -1,0 +1,86 @@
+.hero {
+  position: relative;
+  padding-top: 6px;
+  height: 502px;
+  background-color: $hero-bgc;
+  overflow: hidden;
+}
+.header-logo {
+  display: inline-block;
+}
+.page-title {
+  position: absolute;
+  z-index: 10;
+  font-family: Titan One;
+
+  font-size: 26px;
+  line-height: 1.15;
+  // letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  width: 218px;
+  margin-top: 137px;
+  &__accented {
+    font-size: 48px;
+    line-height: 0.96;
+
+    color: $accented-text;
+  }
+}
+.hero-circle {
+  z-index: 1;
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  display: inline-block;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $dark-pink;
+}
+.icecream-box {
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+  z-index: 9;
+}
+.hero-prod__btn {
+  z-index: 15;
+  position: absolute;
+  top: 318px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: $accented-text;
+  font-size: 8px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 61px;
+  height: 24px;
+  border-radius: 20px;
+}
+.hero-made__btn {
+  z-index: 15;
+  position: absolute;
+  top: 318px;
+  left: 91px;
+  display: inline-block;
+  color: $accented-text;
+
+  background-color: #ffffff;
+  font-size: 8px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 83px;
+  height: 24px;
+  border-radius: 20px;
+}

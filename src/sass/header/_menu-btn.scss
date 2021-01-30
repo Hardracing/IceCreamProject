@@ -7,6 +7,15 @@
   border: none;
   padding: 0;
 }
+.menuopen-btn {
+  display: inline-flex;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
 .menu-close__icon {
   stroke: #fff;
 }
