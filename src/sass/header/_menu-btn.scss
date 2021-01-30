@@ -1,0 +1,32 @@
+.menuclose-btn {
+  display: inline-flex;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+.menuopen-btn {
+  display: inline-flex;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+.menu-close__icon {
+  stroke: #fff;
+}
+.menu-close__icon {
+  display: none;
+}
+.menu-burger__icon {
+  display: block;
+}
+.menu-button {
+  @media screen and(min-width: $desctop) {
+    display: none;
+  }
+}

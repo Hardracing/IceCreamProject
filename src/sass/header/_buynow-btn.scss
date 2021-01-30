@@ -1,0 +1,35 @@
+.buynow-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 44px;
+
+  border: none;
+  background-color: #fff;
+  color: $accented-text;
+  @media screen and(max-width: $to-tablet) {
+    width: 209px;
+  }
+  @media screen and(min-width: $tablet) {
+    width: 186px;
+  }
+  @media screen and(min-width: $desctop) {
+    margin-left: 110px;
+    margin-top: 39px;
+  }
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  border-radius: 22px;
+
+  transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: $light-btn-hover-bgc;
+  }
+}

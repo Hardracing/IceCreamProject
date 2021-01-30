@@ -1,0 +1,48 @@
+<!--<p class="reviews">this is section with gallery and reviews</p>-->
+<section class="reviews">
+    
+    <div class="reviews-gallery">
+        <picture>
+            <source srcset="./images/reviews/gallery-mobile1.jpg 1x, ./images/reviews/gallery-mobile2.jpg 2x" media="(max-width: $to-mobile)" />
+            <source srcset="./images/reviews/gallery-tablet1.jpg 1x, ./images/reviews/gallery-tablet2.jpg 2x" media="(min-width: $tablet)" />
+            <source srcset="./images/reviews/gallery-desctop1.jpg 1x, ./images/reviews/gallery-desctop2.jpg 2x" media="(min-width: $desctop)" />
+            <img src="./images/reviews/gallery-desctop1.jpg" alt="Пример">
+        </picture>
+    
+    </div>
+    <ul class="reviews list">
+        <li class="reviews-list-item">
+            <div class="photo-person1">
+                <img src="./images/reviews/person1.png"alt="Отзыв">
+            </div>
+            <div class="background-review">
+                <p class="review-one">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            </div>
+                <div class="icons-dots">
+                <svg class="reviews-dots-svg">
+                    <use href="./images/reviews/icons/symbol-defs.svg#circle2"></use>
+                </svg>
+                <svg class="reviews-dots-svg">
+                    <use href="./images/reviews/icons/symbol-defs.svg#circle2"></use>
+                </svg>
+                <svg class="reviews-dots-svg">
+                    <use href="./images/reviews/icons/symbol-defs.svg#circle2"></use>
+                </svg>
+            </div>
+            
+            <p class="reviews-name">Emily, Los Angeles</p>
+        
+        </li>                               
+    </ul>
+    <div class="reviews-nav">
+        <svg class="nav-home-svg">
+                <use href="./images/reviews/icons/symbol-defs.svg#home"></use>
+            </svg>
+            <svg class="nav-icon-svg">
+                <use href="./images/reviews/icons/symbol-defs.svg#circle1"></use>
+            </svg>
+            <svg class="nav-icon-svg">
+                <use href="./images/reviews/icons/symbol-defs.svg#circle1"></use>
+            </svg>
+    </div>
+</section>

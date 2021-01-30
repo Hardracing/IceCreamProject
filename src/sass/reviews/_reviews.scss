@@ -1,0 +1,89 @@
+/*.reviews {
+  color: greenyellow;
+}*/
+
+.reviews-gallery {
+  min-width: 320px;
+  @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
+    width: 768px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 1280px;
+  }
+}
+.photo-person1 {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  width: 85px;
+  height: 85px;
+  
+}
+.reviews-dots-svg {
+   width: 4px;
+   height: 4px;
+   fill: #c7133E;
+}
+.reviews-dots-svg:not(:last-child) {
+     margin-right: 10px;
+}
+
+.review-one {
+  @media screen and (max-width: $to-tablet){
+    width: 157px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight:500; 
+  font-size: 12px;
+    line-height: 2.66;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:rgba(0,0,0,1);
+  }
+}
+.reviews-name {
+  @media screen and (max-width: $to-tablet){
+    font-weight:500; 
+    font-size: 14px;
+    line-height: 1.85;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:rgba(0,0,0,1);
+  }
+}
+.nav-home-svg {
+  margin-right: 18px;
+   width: 12px;
+    height: 12px;
+    fill: $home-icon;
+  
+}
+.nav-icon-svg {
+ width: 12px;
+    height: 12px;
+    fill: $circle-icon;
+  
+}
+.nav-icon-svg:not(:last-child) {
+  margin-right: 18px;
+}
+.reviews-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+.icons-dots {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.background-review {
+ margin-right: auto;
+ margin-left: auto;
+  background-color: $review-bgc;
+  @media screen and (max-width: $to-tablet) {
+    width: 280px;
+    padding-top: 43px;
+    padding-bottom: 20px;
+  }
+}
