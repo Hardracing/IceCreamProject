@@ -63,10 +63,8 @@
 
 .making-describe {
   @media screen and (max-width: $to-tablet) {
-    padding-top: 46px;
-    padding-bottom: 39px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 30px;
+    margin-top: 46px;
   }
   @media screen and (min-width: $tablet) {
     margin-top: 50px;
@@ -178,6 +176,9 @@
   background-position: 50% 50%;
 }
 .making-statistical {
+  @media screen and (max-width: $to-tablet){
+    margin-top: 39px;
+  }
   @media screen and(min-width: $tablet) {
     display: flex;
     margin-top: 64px;
