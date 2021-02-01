@@ -124,6 +124,13 @@ p {
 
   padding: 43px 20px;
 
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.07);
+  }
+
   &:nth-child(3n) {
     margin-bottom: 0;
   }
