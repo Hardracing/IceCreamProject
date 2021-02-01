@@ -1,15 +1,16 @@
 <!--<p class="reviews">this is section with gallery and reviews</p>-->
 <section class="reviews">
+    <div class="container">
     <h2 class="section__title visually-hidden">REVIEWS</h2>
     <div class="reviews-gallery">
         <picture>
-            <source srcset="./images/reviews/gallery-mobile1.jpg 1x, ./images/reviews/gallery-mobile2.jpg 2x" media="(max-width: $to-mobile)" />
-            <source srcset="./images/reviews/gallery-tablet1.jpg 1x, ./images/reviews/gallery-tablet2.jpg 2x" media="(min-width: $tablet)" />
-            <source srcset="./images/reviews/gallery-desctop1.jpg 1x, ./images/reviews/gallery-desctop2.jpg 2x" media="(min-width: $desctop)" />
-            <img src="./images/reviews/gallery-desctop1.jpg" alt="Пример">
+            <source srcset="./images/reviews/gallery-mobile1.jpg 1x, ./images/reviews/gallery-mobile2.jpg 2x" media="(max-width:767px)" />
+            <source srcset="./images/reviews/gallery-tablet1.jpg 1x, ./images/reviews/gallery-tablet2.jpg 2x " media="(min-width: 768px)" />
+            <source srcset="./images/reviews/gallery-desctop1.jpg 1x, ./images/reviews/gallery-desctop2.jpg 2x" media="(min-width: 1200px)" />
+            <img src="./images/reviews/gallery-mobile1.jpg" alt="Пример">
         </picture>    
     </div>
-    <div class="container">
+    
     <ul class="reviews list">
         <li class="reviews-list-item">
             <div class="photo-person1">

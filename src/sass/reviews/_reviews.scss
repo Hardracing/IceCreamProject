@@ -1,161 +1,188 @@
 /*.reviews {
-  display: flex;
- justify-content: center;
-}*/
-/*.reviews .container{
+display: flex;
+ }
+.reviews .container{
   padding:0;
 }*/
 
 .reviews-gallery {
-  min-width: 320px;
-  @media screen and (min-width: $tablet) {
-    width: 100%;
-  }
-  @media screen and (min-width: $desctop) {
-    width: 1280px;
-  }
-}
+  height: auto;
+ width: 100%;
+ 
+/*@media screen and (min-width: $tablet) {
+
+ min-width: 320px;
+ @media screen and (min-width: $tablet) {
+
+   width: 100%;
+ }*/
+ @media screen and (min-width: $desctop) {
+   width: 1280px;
+   margin-left: -80px;
+   }
+ }
 
 .photo-person1 {
-  margin-top: 80px;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
-  width: 85px;
-  height: 85px;
+ margin-top: 80px;
+ margin-right: auto;
+ margin-bottom: 30px;
+ margin-left: auto;
+ width: 85px;
+ height: 85px;
 }
 .reviews-dots-svg {
-  width: 4px;
-  height: 4px;
-  fill: $pink-btn-hover-bgc;
+ width: 4px;
+ height: 4px;
+ fill: $pink-btn-hover-bgc;
 }
 .reviews-dots-svg:not(:last-child) {
-  margin-right: 10px;
+ margin-right: 10px;
 }
 
 .review-one {
-  padding-bottom: 7px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url(../images/reviews/line1.svg);
-  background-position: right 10px bottom 40px;
-  position: relative;
-  text-align: center;
-  z-index: 100;
+ padding-bottom: 7px;
+ margin-right: auto;
+ margin-left: auto;
+ background-image: url(../images/reviews/line1.svg);
+ background-position: right 10px bottom 40px;
+ position: relative;
+ text-align: center;
+ z-index: 100;
 
-  @media screen and (max-width: $to-tablet) {
-    width: 157px;
+ @media screen and (max-width: $to-tablet) {
+   width: 157px;
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.66;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 2.66;
 
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
-  }
-  @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
-    width: 480px;
+   
+   letter-spacing: 0.04em;
+   color:rgba(0,0,0,1);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 2.16;
 
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
-  }
-  @media screen and (min-width: $desctop) {
-    width: 750px;
+   letter-spacing: 0.03em;
+   color: rgba(0, 0, 0, 1);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.86;
+ }
+ @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
+   width: 480px;
 
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
-  }
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 2.16;
+
+   
+   letter-spacing: 0.04em;
+   color:rgba(0,0,0,1);
+
+
+   letter-spacing: 0.03em;
+   color: rgba(0, 0, 0, 1);
+
+ }
+ @media screen and (min-width: $desctop) {
+   width: 750px;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.86;
+   
+   letter-spacing: 0.04em;
+   color:rgba(0,0,0,1);   
+
+ }
 }
 .review-one:before {
-  content: '';
-  background-image: url(../images/reviews/icons/quotes1.svg);
-  background-repeat: no-repeat;
-  display: block;
-  width: 54px;
-  height: 40px;
-  position: absolute;
-  top: -15px;
-  left: 0px;
-  z-index: -10;
-  @media screen and (min-width: $tablet) {
-    top: -15px;
-    left: -20px;
-  }
+ content: '';
+ background-image: url(../images/reviews/icons/quotes1.svg);
+ background-repeat: no-repeat;
+ display: block;
+ width: 54px;
+ height: 40px;
+ position: absolute;
+ top: -15px;
+ left: 0px;
+ z-index: -10;
+ @media screen and (min-width: $tablet) {
+   top: -15px;
+   left: -20px;
+ }
 }
 
 .reviews-name {
-  @media screen and (max-width: $to-tablet) {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.85;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
-  }
-  @media screen and (max-width: $to-desctop) {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.86;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
-  }
-  @media screen and (min-width: $desctop) {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.86;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
-  }
+ @media screen and (max-width: $to-tablet) {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.85;
+   text-align: center;
+
+   letter-spacing: 0.04em;
+   color:rgba(0,0,0,1);
+ }
+
+ 
+ @media screen and (max-width: $to-desctop) {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.86;
+   text-align: center;
+   letter-spacing: 0.04em;
+   color:rgba(0,0,0,1);
+
+   
+
+ }
+ @media screen and (min-width: $desctop) {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.86;
+   text-align: center;
+
+   letter-spacing: 0.04em;
+   color:rgba(0,0,0,1);
+
+ }
 }
 .nav-home-svg {
-  margin-right: 18px;
-  width: 12px;
-  height: 12px;
-  fill: $home-icon;
+ margin-right: 18px;
+ width: 12px;
+ height: 12px;
+ fill: $home-icon;
 }
 .nav-icon-svg {
-  width: 12px;
-  height: 12px;
-  fill: $circle-icon;
+ width: 12px;
+ height: 12px;
+ fill: $circle-icon;
 }
 .nav-icon-svg:not(:last-child) {
-  margin-right: 18px;
+ margin-right: 18px;
 }
 .reviews-nav {
-  text-align: center;
-  margin-top: 30px;
+ text-align: center;
+ margin-top: 30px;
 }
 .icons-dots {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 18px;
+ text-align: center;
+ margin-top: 30px;
+ margin-bottom: 18px;
 }
 .background-review {
-  width: 100%;
-  background-color: $review-bgc;
-  @media screen and (max-width: $to-tablet) {
-    padding-top: 43px;
-    padding-bottom: 26px;
-  }
-  @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
-    padding-top: 47px;
-    padding-bottom: 34px;
-  }
-  @media screen and (min-width: $desctop) {
-    padding-top: 47px;
-    padding-bottom: 40px;
-  }
+ width: 100%;
+ background-color: $review-bgc;
+ @media screen and (max-width: $to-tablet) {
+   padding-top: 43px;
+   padding-bottom: 26px;
+ }
+ @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
+   padding-top: 47px;
+   padding-bottom: 34px;
+ }
+ @media screen and (min-width: $desctop) {
+   padding-top: 47px;
+   padding-bottom: 40px;
+ }
 }
 .karusel {
-  display: none;
+ display: none;
 }
