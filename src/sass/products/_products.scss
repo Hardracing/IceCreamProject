@@ -1,4 +1,4 @@
-.container-prod {
+.products {
   padding-top: 121px;
   padding-bottom: 98px;
 
@@ -82,7 +82,6 @@
   margin-right: auto;
   width: 200px;
   @media screen and(max-width: $to-tablet) {
-    margin-top: 15px;
     margin-bottom: 144px;
     font-size: 34px;
     line-height: 39px;
@@ -90,7 +89,6 @@
   }
 
   @media screen and(min-width: $tablet) and(max-width: $to-desctop) {
-    margin-top: 15px;
     margin-bottom: 150px;
     font-size: 48px;
     line-height: 55px;
@@ -99,7 +97,6 @@
     width: 283px;
   }
   @media screen and(min-width: $desctop) {
-    margin-top: 15px;
     margin-bottom: 259px;
     font-size: 58px;
     line-height: 66px;
@@ -163,14 +160,13 @@
   @media screen and(min-width: $tablet) and(max-width: $to-desctop) {
     margin-top: 30px;
     margin-bottom: 40px;
-    height: 124px;
     line-height: 176%;
     overflow: hidden;
   }
   @media screen and(min-width: $desctop) {
     margin-top: 30px;
     margin-bottom: 62px;
-    height: 106px;
+
     font-size: 16px;
     line-height: 176%;
     overflow: hidden;

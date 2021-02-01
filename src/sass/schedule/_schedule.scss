@@ -116,6 +116,12 @@ p {
 }
 
 .schedule-card {
+  &:nth-child(2) {
+    .card-title {
+      background-color: $shakes;
+    }
+  }
+
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -134,7 +140,6 @@ p {
   &:nth-child(3n) {
     margin-bottom: 0;
   }
-
 
   @media screen and (min-width: $tablet) {
     padding: 50px 31px;
@@ -155,37 +160,37 @@ p {
       margin-right: 0;
     }
 
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    transform: scale(1.07);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  .item-city {
+    display: block;
+    color: black;
+    line-height: 1.86;
+    margin-bottom: 10px;
+  }
+
+  .item-title {
+    color: black;
+    line-height: 1.86;
+  }
+
+  .paragraph-time {
+    color: $dark-pink;
+  }
+
+  .paragraph-address {
+    color: $description-text;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
-
-.item-city {
-  display: block;
-  color: black;
-  line-height: 1.86;
-  margin-bottom: 10px;
-}
-
-.item-title {
-  color: black;
-  line-height: 1.86;
-}
-
-.paragraph-time {
-  color: $dark-pink;
-}
-
-.paragraph-address {
-  color: $description-text;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
 .schedule-buttons {
   text-align: center;
 
