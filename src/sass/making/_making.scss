@@ -57,7 +57,7 @@
   }
   @media screen and (min-width: $desctop) {
     margin-top: 55px;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -74,6 +74,7 @@
   @media screen and (min-width: $desctop) {
     width: 463px;
     margin-top: 60px;
+    margin-left: 74px;
   }
 }
 
@@ -85,15 +86,25 @@
   @media screen and (max-width: $to-tablet) {
     font-size: 12px;
     line-height: 1.58;
-    letter-spacing: 0;
   }
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.79;
   }
+
+  @media screen and (max-width: $to-desctop) {
+    letter-spacing: normal;
+  }
+
   @media screen and (min-width: $desctop) {
     line-height: 1.93;
+  }
+}
+
+.br {
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 
@@ -101,20 +112,20 @@
   color: #000000;
   height: 79px;
   display: block;
-  @media screen and (min-width: $tablet) and (max-width: $to-desctop) {
-    letter-spacing: 0;
+  @media screen and(min-width: $desctop) {
+    font-size: 16px;
   }
 }
 
 .making-describe .making-middle {
   margin-top: 47px;
   color: $description-text;
-  letter-spacing: 0, 04em;
   @media screen and (min-width: $tablet) {
     margin-top: 49px;
+    letter-spacing: inherit;
   }
   @media screen and(min-width: $desctop) {
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 
@@ -160,8 +171,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: $light-btn-hover-bgc;
   }
 }
@@ -289,16 +300,21 @@
   @media screen and (max-width: $to-tablet) {
     font-size: 12px;
     line-height: 1.67;
+    width: 230px;
+    letter-spacing: normal;
   }
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.71;
+    width: 180px;
+    letter-spacing: normal;
   }
 
   @media screen and(min-width: $desctop) {
     font-size: 16px;
     line-height: 1.75;
+    width: 330px;
     letter-spacing: 0.02em;
   }
 }
