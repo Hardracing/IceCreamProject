@@ -1,4 +1,5 @@
 .menu-box {
+  z-index: 20;
   display: none;
   @media screen and(max-width: $to-tablet) {
     width: 250px;

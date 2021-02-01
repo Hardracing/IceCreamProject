@@ -1,3 +1,163 @@
 .schedule {
-  color: hotpink;
+  position: relative;
+  color: $description-text;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-top: 86px;
+  padding-bottom: 113px;
+}
+
+.container-schedule {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+  @media screen and(max-width: $to-mobile) {
+    max-width: $mobile;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and(min-width: $mobile) {
+    width: $mobile;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and(min-width: $tablet) {
+    width: $tablet;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media screen and(min-width: $desctop) {
+    width: $desctop;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.schedule::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #fff5f6;
+  z-index: 1;
+  width: 100%;
+  height: 1515px;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.schedule-item {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  &:nth-child(3n) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.card-title {
+  display: inline-block;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: $coffee;
+  margin-bottom: 25px;
+  padding: 0 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.schedule-cards {
+  margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.schedule-card {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+
+  padding: 43px 20px;
+
+  &:nth-child(3n) {
+    margin-bottom: 0;
+  }
+}
+
+.item-city {
+  display: block;
+  color: black;
+  line-height: 1.86;
+  margin-bottom: 10px;
+}
+
+.item-title {
+  color: black;
+  line-height: 1.86;
+}
+
+.paragraph-time {
+  color: $dark-pink;
+}
+
+.paragraph-address {
+  color: $description-text;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.schedule-buttons {
+  text-align: center;
+}
+
+.schedule-button {
+  margin-bottom: 10px;
+
+  &:nth-child(2n) {
+    margin-bottom: 0;
+  }
+}
+
+.button-schedule {
+  color: $accented-text;
+  background-color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  cursor: pointer;
+  width: 161px;
+  height: 44px;
+
+  &:hover,
+  :focus {
+    color: white;
+    background-color: $home-icon;
+  }
+}
+
+.schedule-arrow {
+  stroke: currentColor;
 }
