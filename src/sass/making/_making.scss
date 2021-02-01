@@ -160,7 +160,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $light-btn-hover-bgc;
   }
 }
@@ -176,7 +177,7 @@
   background-position: 50% 50%;
 }
 .making-statistical {
-  @media screen and (max-width: $to-tablet){
+  @media screen and (max-width: $to-tablet) {
     margin-top: 39px;
   }
   @media screen and(min-width: $tablet) {
@@ -315,4 +316,3 @@
     margin-left: 30px;
   }
 }
-
