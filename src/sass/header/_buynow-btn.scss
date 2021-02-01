@@ -11,7 +11,7 @@
   border: none;
   background-color: #fff;
   color: $accented-text;
-  .menu-close__icon-arrow{
+  .menu-close__icon-arrow {
     stroke: $accented-text;
   }
   @media screen and(max-width: $to-tablet) {
@@ -21,7 +21,7 @@
     width: 186px;
     position: absolute;
     padding-left: 43px;
-     }
+  }
   @media screen and(min-width: $desctop) {
     margin-left: 110px;
     width: 159px;
@@ -37,10 +37,12 @@
 
   border-radius: 22px;
 
-  transition: background-color 250ms linear;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: $light-btn-hover-bgc;
   }
 }
-
