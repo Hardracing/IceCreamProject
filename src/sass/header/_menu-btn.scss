@@ -15,6 +15,13 @@
   background-color: inherit;
   border: none;
   padding: 0;
+  @media screen and(min-width: $tablet) {
+  z-index: 15;
+  width: 20px;
+  height: 0px;
+  left: 524px;
+  top: 52px;
+  }
 }
 .menu-close__icon {
   stroke: #fff;

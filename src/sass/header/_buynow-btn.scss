@@ -3,22 +3,32 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 43px;
+  align-items: center;
+  text-align: center;
   height: 44px;
 
   border: none;
   background-color: #fff;
   color: $accented-text;
+  .menu-close__icon-arrow{
+    stroke: $accented-text;
+  }
   @media screen and(max-width: $to-tablet) {
     width: 209px;
   }
   @media screen and(min-width: $tablet) {
     width: 186px;
-  }
+    position: absolute;
+    padding-left: 43px;
+     }
   @media screen and(min-width: $desctop) {
     margin-left: 110px;
-    margin-top: 39px;
+    width: 159px;
+    height: 44px;
+    left: 1006px;
+    top: 38px;
+    padding-left: 37px;
   }
 
   font-weight: 700;
@@ -33,3 +43,4 @@
     background-color: $light-btn-hover-bgc;
   }
 }
+
