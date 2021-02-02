@@ -58,10 +58,9 @@
   }
 }
 .products .section-subtitle {
-  font-family: Titan One;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
+  display: block;
+  margin-bottom: 15px;
+
   @media screen and(max-width: $to-tablet) {
     font-size: 18px;
     line-height: 21px;
@@ -148,7 +147,7 @@
   display: block;
   font-weight: 700;
   font-size: 14px;
-  line-height: 156%;
+  line-height: 1.52;
   letter-spacing: 0.04em;
   text-align: center;
   color: #ffffff;
@@ -160,16 +159,16 @@
   @media screen and(min-width: $tablet) and(max-width: $to-desctop) {
     margin-top: 30px;
     margin-bottom: 40px;
-    line-height: 176%;
-    overflow: hidden;
+    line-height: 1.76;
+    // overflow: hidden;
   }
   @media screen and(min-width: $desctop) {
     margin-top: 30px;
     margin-bottom: 62px;
 
     font-size: 16px;
-    line-height: 176%;
-    overflow: hidden;
+    line-height: 1.76;
+    // overflow: hidden;
   }
 }
 .product-image__container {
@@ -197,4 +196,9 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+.dolore {
+  @media screen {
+    display: none;
+  }
 }

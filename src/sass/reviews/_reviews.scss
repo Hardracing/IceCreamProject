@@ -1,6 +1,25 @@
 
 .reviews-gallery {
+
  width: 100%; 
+
+  margin-top: -43px;
+  /*@media screen and (min-width: $tablet) {
+    
+    min-width: 320px;
+    @media screen and (min-width: $tablet) {
+      
+      width: 100%;
+    }*/
+    @media screen and(min-width: $tablet) {
+      margin-top: -96px;
+    }
+    
+    @media screen and (min-width: $desctop) {
+    margin-top: -143px;
+   
+   }
+
  }
 
 .photo-person1 {

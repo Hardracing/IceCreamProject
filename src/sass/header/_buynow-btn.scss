@@ -9,19 +9,17 @@
   align-items: center;
   text-align: center;
   height: 44px;
-  
+
   border: none;
   background-color: #fff;
   color: $accented-text;
-  @media screen and(min-width: $tablet){
 
-  }
-  @media screen and(min-width: $desctop){
+  @media screen and(min-width: $desctop) {
     position: absolute;
     width: 159px;
     height: 44px;
-    left: 956px;
-    top: 38px;
+    // left: 956px;
+    // top: 38px;
   }
 
   .menu-close__icon-arrow {
@@ -32,8 +30,6 @@
   }
   @media screen and(min-width: $tablet) {
     width: 186px;
-    
-    
   }
   @media screen and(min-width: $desctop) {
     margin-left: 110px;
@@ -54,36 +50,36 @@
     background-color: $light-btn-hover-bgc;
   }
 }
-.buynow-btn-tablet{
+.buynow-btn-tablet {
   display: none;
-  @media screen and(min-width: $tablet){
-  display: block;
-  position: absolute;
-  z-index: 15;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  padding-left: 14px;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  color: $accented-text;
-  border-radius: 22px;
-  border: none;
-  background-color: #fff;
-  position: absolute;
-  width: 160px;
-  height: 44px;
-  left: 574px;
-  top: 38px;
-  &:hover,
-  &:focus {
-    background-color: $light-btn-hover-bgc;
-  }
-  @media screen and(min-width: $desctop){
-    display: none;
-  }
+  @media screen and(min-width: $tablet) {
+    display: block;
+    position: absolute;
+    z-index: 15;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 14px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: $accented-text;
+    border-radius: 22px;
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    width: 160px;
+    height: 44px;
+    left: 574px;
+    top: 38px;
+    &:hover,
+    &:focus {
+      background-color: $light-btn-hover-bgc;
+    }
+    @media screen and(min-width: $desctop) {
+      display: none;
+    }
   }
 }
 .menu-close__icon-arrow-tablet {
@@ -97,5 +93,4 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
