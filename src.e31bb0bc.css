@@ -114,17 +114,8 @@ img {
   overflow: hidden;
 }
 
-.menuclose-btn {
-  display: inline-flex;
-  position: absolute;
-  top: 23px;
-  right: 28px;
-  background-color: inherit;
-  border: none;
-  padding: 0;
-}
-
 .menuopen-btn {
+  z-index: 1000;
   display: inline-flex;
   position: absolute;
   top: 25px;
@@ -133,25 +124,20 @@ img {
   border: none;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
-  .menuopen-btn {
-    z-index: 15;
-    width: 20px;
-    height: 0px;
-    left: 524px;
-    top: 52px;
-  }
-}
 
 .menu-close__icon {
   stroke: #fff;
-}
-
-.menu-close__icon {
   display: none;
 }
 
 .menu-burger__icon {
+  display: block;
+}
+
+.menuopen-btn.is-opened .menu-burger__icon {
+  display: none;
+}
+.menuopen-btn.is-opened .menu-close__icon {
   display: block;
 }
 
@@ -188,8 +174,6 @@ img {
     position: absolute;
     width: 159px;
     height: 44px;
-    left: 956px;
-    top: 38px;
   }
 }
 .buynow-btn .menu-close__icon-arrow {
@@ -305,24 +289,30 @@ img {
 }
 
 .menu-box {
-  z-index: 20;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-100%);
-  transition: transform 500ms linear;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .menu-box {
+    opacity: 0;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    transform: translateX(150%);
     width: 250px;
     height: 502px;
     padding-top: 58px;
     padding-left: 21px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-box {
+    opacity: 0;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    transform: translateX(300%);
     width: 254px;
     height: 1020px;
     padding-top: 60px;
@@ -346,11 +336,16 @@ img {
 }
 
 .menu-box.is-opened {
-  display: block;
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateY(0%);
+  opacity: 1;
+  transform: translateX(20%);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-box.is-opened {
+    z-index: 200;
+    transform: translateX(190%);
+  }
 }
 .menu-box.is-opened .menu-burger__icon {
   display: none;
@@ -359,37 +354,48 @@ img {
   display: block;
 }
 
-.hero {
-  width: 100%;
+.hero-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   padding-top: 6px;
   height: 502px;
-  background-color: #ffb8ca;
-  background-size: 100%;
-  overflow: hidden;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero {
-    max-width: 320px;
+@media screen {
+  .hero-container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-container {
     width: 768px;
-    height: 399px;
     padding-top: 37px;
     padding-left: 34px;
     padding-right: 34px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero-container {
     width: 1200px;
-    height: 665px;
     padding-top: 38px;
     padding-right: 98px;
+  }
+}
+
+.hero {
+  width: 100%;
+  background-color: #ffb8ca;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 399px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 665px;
   }
 }
 
@@ -417,7 +423,7 @@ img {
 
 .page-title {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   font-family: Titan One;
   font-size: 26px;
   line-height: 1.15;
@@ -468,39 +474,11 @@ img {
   }
 }
 
-.hero-circle {
-  z-index: 1;
-  position: absolute;
-  top: 83px;
-  left: 36px;
-  display: inline-block;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  background-color: #ffa5ba;
-}
-@media screen and (min-width: 768px) {
-  .hero-circle {
-    width: 324px;
-    height: 322px;
-    left: 307px;
-    top: 31px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero-circle {
-    width: 538px;
-    height: 538px;
-    left: 475px;
-    top: 52px;
-  }
-}
-
 .icecream-box {
   position: absolute;
   right: 32px;
   bottom: 0;
-  z-index: 9;
+  z-index: 19;
 }
 @media screen and (min-width: 768px) {
   .icecream-box {
@@ -520,9 +498,38 @@ img {
     z-index: 9;
   }
 }
+.icecream-box::before {
+  display: inline-block;
+  content: "";
+  z-index: -5;
+  position: absolute;
+  top: -9px;
+  left: -81px;
+  display: inline-block;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+@media screen and (min-width: 768px) {
+  .icecream-box::before {
+    width: 324px;
+    height: 322px;
+    left: -71px;
+    top: -32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icecream-box::before {
+    width: 538px;
+    height: 538px;
+    left: -119px;
+    top: -56px;
+  }
+}
 
 .hero-prod__btn {
-  z-index: 15;
+  z-index: 100;
   position: absolute;
   top: 318px;
   display: inline-block;
@@ -563,7 +570,7 @@ img {
 }
 
 .hero-made__btn {
-  z-index: 15;
+  z-index: 100;
   position: absolute;
   top: 318px;
   left: 91px;
@@ -679,7 +686,7 @@ img {
 
 .woman-box {
   display: none;
-  z-index: 2;
+  z-index: 11;
 }
 @media screen and (min-width: 768px) {
   .woman-box {
@@ -806,7 +813,7 @@ img {
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 698px;
+    left: 717px;
     top: 151px;
     border-radius: 50%;
     background: #ffffff;
@@ -1145,13 +1152,13 @@ img {
 @media screen and (min-width: 768px) {
   .making-section {
     padding-top: 130px;
-    padding-bottom: 142px;
+    padding-bottom: 242px;
   }
 }
 @media screen and (min-width: 1200px) {
   .making-section {
     padding-top: 125px;
-    padding-bottom: 139px;
+    padding-bottom: 300px;
     background-image: url(/milk-background@1x.5ceda0c7.png);
   }
 }
@@ -1508,20 +1515,23 @@ display: flex;
   padding:0;
 }*/
 .reviews-gallery {
-  height: auto;
-  width: 100%;
+  margin-top: -43px;
   /*@media screen and (min-width: $tablet) {
 
-   min-width: 320px;
-   @media screen and (min-width: $tablet) {
+    min-width: 320px;
+    @media screen and (min-width: $tablet) {
 
-     width: 100%;
-   }*/
+      width: 100%;
+    }*/
+}
+@media screen and (min-width: 768px) {
+  .reviews-gallery {
+    margin-top: -96px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .reviews-gallery {
-    width: 1280px;
-    margin-left: -80px;
+    margin-top: -143px;
   }
 }
 
