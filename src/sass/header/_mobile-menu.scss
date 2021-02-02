@@ -1,28 +1,33 @@
 .menu-box {
-  z-index: 20;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-100%);
-  transition: transform 500ms linear;
+  // position: relative;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and(max-width: $to-tablet) {
+    opacity: 0;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    transform: translateX(150%);
     width: 250px;
     height: 502px;
     padding-top: 58px;
     padding-left: 21px;
   }
-  @media screen and(min-width: $tablet) {
-    // position: absolute;
-    // top: 0;
-    // right: 100%;
+  @media screen and(min-width: $tablet) and(max-width: $to-desctop) {
+    opacity: 0;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    transform: translateX(300%);
+
     width: 254px;
     height: 1020px;
     padding-top: 60px;
     padding-left: 24px;
     .buynow-btn {
       margin-left: 10px;
-      
     }
   }
   @media screen and(max-width: $to-desctop) {
@@ -36,11 +41,15 @@
 }
 
 .menu-box.is-opened {
-  display: block;
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateY(0%);
+  opacity: 1;
+  transform: translateX(20%);
+
+  @media screen and(min-width: $tablet) and(max-width: $to-desctop) {
+    z-index: 200;
+    transform: translateX(190%);
+  }
   .menu-burger__icon {
     display: none;
   }
