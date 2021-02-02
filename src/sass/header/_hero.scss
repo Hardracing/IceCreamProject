@@ -6,6 +6,7 @@
   padding-top: 6px;
   height: 502px;
   background-color: $hero-bgc;
+  background-size: 100%;
   overflow: hidden;
   @media screen and(min-width: $mobile) and (max-width: $to-tablet) {
     max-width: $mobile;
@@ -248,11 +249,11 @@
     display: block;
     position: absolute;
     width: 114px;
-    height: 48px;
     left: 154px;
     top: 292px;
     font-style: normal;
     font-weight: normal;
+    letter-spacing: 0;
     font-size: 8px;
     line-height: 150%;
     color: #ffffff;
@@ -261,7 +262,6 @@
     font-size: 14px;
     line-height: 140%;
     width: 200px;
-    height: 78px;
     left: 295px;
     top: 485px;
   }
@@ -306,7 +306,7 @@
   @media screen and(min-width: $desctop) {
     width: 293px;
     height: 232px;
-    left: 878px;
+    left: 853px;
     top: 433px;
   }
 }
@@ -326,7 +326,7 @@
   @media screen and(min-width: $desctop) {
     width: 30px;
     height: 30px;
-    left: 1153px;
+    left: 1123px;
     top: 156px;
   }
 }
@@ -353,7 +353,7 @@
     z-index: 15;
     width: 54px;
     height: 53px;
-    left: 1111px;
+    left: 1081px;
     top: 160px;
     font-size: 46px;
     line-height: 1.15;
@@ -379,7 +379,7 @@
   @media screen and(min-width: $desctop) {
     width: 35px;
     height: 18px;
-    left: 1130px;
+    left: 1100px;
     top: 215px;
     font-size: 14px;
     line-height: 1.29;
@@ -392,7 +392,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 718px;
+    left: 698px;
     top: 151px;
     border-radius: 50%;
     background: #ffffff;
@@ -401,7 +401,7 @@
   @media screen and(min-width: $desctop) {
     width: 30px;
     height: 30px;
-    left: 1153px;
+    left: 1123px;
     top: 248px;
   }
 }
@@ -427,7 +427,7 @@
   @media screen and(min-width: $desctop) {
     width: 59px;
     height: 53px;
-    left: 1106px;
+    left: 1076px;
     top: 251px;
     font-size: 46px;
     line-height: 1.15;
@@ -452,7 +452,7 @@
   @media screen and(min-width: $desctop) {
     width: 120px;
     height: 18px;
-    left: 1091px;
+    left: 1061px;
     top: 306px;
     font-size: 14px;
     line-height: 1.29;
