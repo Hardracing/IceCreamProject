@@ -1,29 +1,40 @@
-.hero {
-  width: 100%;
+.hero-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   padding-top: 6px;
   height: 502px;
-  background-color: $hero-bgc;
-  background-size: 100%;
-  overflow: hidden;
-  @media screen and(min-width: $mobile) and (max-width: $to-tablet) {
-    max-width: $mobile;
+  @media screen {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   @media screen and(min-width: $tablet) {
     width: $tablet;
-    height: 399px;
     padding-top: 37px;
     padding-left: 34px;
     padding-right: 34px;
   }
-
   @media screen and (min-width: $desctop) {
     width: $desctop;
-    height: 665px;
     padding-top: 38px;
     padding-right: 98px;
+  }
+}
+.hero {
+  width: 100%;
+
+  background-color: $hero-bgc;
+  // background-size: 100%;
+  overflow: hidden;
+  // @media screen and(min-width: $mobile) and (max-width: $to-tablet) {
+  //   max-width: $mobile;
+  // }
+  @media screen and(min-width: $tablet) {
+    height: 399px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    height: 665px;
   }
 }
 
@@ -46,7 +57,7 @@
 }
 .page-title {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   font-family: Titan One;
 
   font-size: 26px;
@@ -94,35 +105,35 @@
   }
 }
 .hero-circle {
-  z-index: 1;
-  position: absolute;
-  top: 83px;
-  left: 36px;
-  display: inline-block;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  background-color: $dark-pink;
+  // z-index: 1;
+  // position: absolute;
+  // top: 83px;
+  // left: 36px;
+  // display: inline-block;
+  // width: 346px;
+  // height: 344px;
+  // border-radius: 50%;
+  // background-color: $dark-pink;
 
-  @media screen and(min-width: $tablet) {
-    width: 324px;
-    height: 322px;
-    left: 307px;
-    top: 31px;
-  }
+  // @media screen and(min-width: $tablet) {
+  //   width: 324px;
+  //   height: 322px;
+  //   left: 307px;
+  //   top: 31px;
+  // }
 
-  @media screen and(min-width: $desctop) {
-    width: 538px;
-    height: 538px;
-    left: 475px;
-    top: 52px;
-  }
+  // @media screen and(min-width: $desctop) {
+  //   width: 538px;
+  //   height: 538px;
+  //   left: 475px;
+  //   top: 52px;
+  // }
 }
 .icecream-box {
   position: absolute;
   right: 32px;
   bottom: 0;
-  z-index: 9;
+  z-index: 19;
 
   @media screen and(min-width: $tablet) {
     width: 143px;
@@ -139,10 +150,37 @@
     top: 108px;
     z-index: 9;
   }
+  &::before {
+    display: inline-block;
+    content: '';
+    z-index: -5;
+    position: absolute;
+    top: -9px;
+    left: -81px;
+    display: inline-block;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: $dark-pink;
+
+    @media screen and(min-width: $tablet) {
+      width: 324px;
+      height: 322px;
+      left: -71px;
+      top: -32px;
+    }
+
+    @media screen and(min-width: $desctop) {
+      width: 538px;
+      height: 538px;
+      left: -119px;
+      top: -56px;
+    }
+  }
 }
 
 .hero-prod__btn {
-  z-index: 15;
+  z-index: 100;
   position: absolute;
   top: 318px;
   display: inline-block;
@@ -183,7 +221,7 @@
   }
 }
 .hero-made__btn {
-  z-index: 15;
+  z-index: 100;
   position: absolute;
   top: 318px;
   left: 91px;
@@ -288,7 +326,7 @@
 
 .woman-box {
   display: none;
-  z-index: 2;
+  z-index: 11;
   @media screen and(min-width: $tablet) {
     display: block;
     position: absolute;
@@ -392,7 +430,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 698px;
+    left: 717px;
     top: 151px;
     border-radius: 50%;
     background: #ffffff;
@@ -407,6 +445,8 @@
 }
 .food23 {
   display: none;
+  &::after {
+  }
   @media screen and(min-width: $tablet) {
     display: block;
     position: absolute;
